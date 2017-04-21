@@ -3,7 +3,7 @@
 
 <div id="error_explanation">
   <ul>
-    <% message.errors.full_messages.each do |message| %>
+    <% task.errors.full_tasks.each do |task| %>
     <li>
       <%= task %>
     </li>
@@ -12,8 +12,8 @@
 </div>
 <% end %>
 
-<%= f.label :title,"タイトル" %>
-<%= f.text_field :title %>
+<%= f.label :status,"タイトル" %>
+<%= f.text_field :status %>
 <%= f.label :content,"タスク" %>
 <%= f.text_field :content %>
 <%= f.submit "追加" %>
